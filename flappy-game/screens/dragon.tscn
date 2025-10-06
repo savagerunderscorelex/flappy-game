@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://da6movnu2tgn3"]
+
+[ext_resource type="Script" uid="uid://dhxtqnxfdlav2" path="res://scripts/dragon.gd" id="1_4mrox"]
+[ext_resource type="Texture2D" uid="uid://cmriqomm864de" path="res://assets/reddragonfly.png" id="1_nug88"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mrox"]
+atlas = ExtResource("1_nug88")
+region = Rect2(0, 0, 205, 161)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0aoab"]
+atlas = ExtResource("1_nug88")
+region = Rect2(205, 0, 205, 161)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fyka"]
+atlas = ExtResource("1_nug88")
+region = Rect2(410, 0, 205, 161)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xga5l"]
+atlas = ExtResource("1_nug88")
+region = Rect2(205, 161, 205, 161)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur6dq"]
+atlas = ExtResource("1_nug88")
+region = Rect2(410, 161, 205, 161)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cymkm"]
+atlas = ExtResource("1_nug88")
+region = Rect2(615, 161, 205, 161)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6eux6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mrox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0aoab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fyka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xga5l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur6dq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cymkm")
+}],
+"loop": true,
+"name": &"flying",
+"speed": 7.0
+}]
+
+[node name="Dragon" type="CharacterBody2D"]
+position = Vector2(1, 10)
+script = ExtResource("1_4mrox")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_6eux6")
+animation = &"flying"
+frame = 5
+frame_progress = 0.725082
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-144, -86)
+polygon = PackedVector2Array(56, 82, 89, 95, 111, 82, 112, 62, 162, 51, 208, 80, 219, 99, 212, 116, 196, 117, 180, 126, 151, 119, 117, 132, 82, 122, 59, 103)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

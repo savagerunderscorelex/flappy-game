@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://csvk33sbx1iyd"]
+[gd_scene load_steps=2 format=3 uid="uid://csvk33sbx1iyd"]
+
+[ext_resource type="PackedScene" uid="uid://da6movnu2tgn3" path="res://screens/dragon.tscn" id="1_wtj3h"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Dragon" parent="." instance=ExtResource("1_wtj3h")]
+position = Vector2(274, 21)
