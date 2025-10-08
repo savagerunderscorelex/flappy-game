@@ -58,14 +58,14 @@ position = Vector2(1, 10)
 script = ExtResource("1_4mrox")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 0)
+position = Vector2(86, 34)
 sprite_frames = SubResource("SpriteFrames_6eux6")
 animation = &"flying"
 frame = 5
 frame_progress = 0.725082
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-144, -86)
+position = Vector2(-64, -53)
 polygon = PackedVector2Array(56, 82, 89, 95, 111, 82, 112, 62, 162, 51, 208, 80, 219, 99, 212, 116, 196, 117, 180, 126, 151, 119, 117, 132, 82, 122, 59, 103)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

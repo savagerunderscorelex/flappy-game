@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://csvk33sbx1iyd"]
+[gd_scene load_steps=3 format=3 uid="uid://csvk33sbx1iyd"]
 
+[ext_resource type="Script" uid="uid://bdkdmdlrnvi1j" path="res://scripts/main.gd" id="1_0vcwn"]
 [ext_resource type="PackedScene" uid="uid://da6movnu2tgn3" path="res://screens/dragon.tscn" id="1_wtj3h"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_0vcwn")
 
 [node name="Dragon" parent="." instance=ExtResource("1_wtj3h")]
-position = Vector2(274, 21)
+position = Vector2(147, 309)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
