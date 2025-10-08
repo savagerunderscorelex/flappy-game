@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://354sx4ywj2fj"]
+
+[ext_resource type="Script" uid="uid://dcm5dlv68twmi" path="res://scripts/autobus.gd" id="1_0tcvc"]
+
+[node name="Autoload" type="Node2D"]
+script = ExtResource("1_0tcvc")

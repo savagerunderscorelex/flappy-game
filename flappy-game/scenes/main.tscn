@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://csvk33sbx1iyd"]
+
+[ext_resource type="Script" uid="uid://bdkdmdlrnvi1j" path="res://scripts/main.gd" id="1_0vcwn"]
+[ext_resource type="PackedScene" uid="uid://da6movnu2tgn3" path="res://scenes/dragon.tscn" id="1_wtj3h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0vcwn"]
+font_size = 60
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0vcwn")
+
+[node name="Dragon" parent="." instance=ExtResource("1_wtj3h")]
+position = Vector2(147, 309)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "0"
+label_settings = SubResource("LabelSettings_0vcwn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+build_mode = 1
+polygon = PackedVector2Array(28, -2, 1151, -2, 1153, 650, 1153, 650, 1, 650, 1, 650, 1, -2)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

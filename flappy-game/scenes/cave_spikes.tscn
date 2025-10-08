@@ -1,21 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://byxr8gxa5nvjo"]
+[gd_scene load_steps=4 format=3 uid="uid://byxr8gxa5nvjo"]
 
-[ext_resource type="Script" uid="uid://dagkf4o7tr6y6" path="res://scripts/cave_spikes.gd" id="1_qt3fr"]
-[ext_resource type="Texture2D" uid="uid://bq2abbd3nytr8" path="res://assets/jaggedrockpointy.png" id="2_l6rgq"]
+[ext_resource type="Script" uid="uid://dagkf4o7tr6y6" path="res://scripts/cave_spikes.gd" id="1_oy0y0"]
+[ext_resource type="Texture2D" uid="uid://bq2abbd3nytr8" path="res://assets/jaggedrockpointy.png" id="2_y168i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lhbgi"]
+size = Vector2(72, 303)
 
 [node name="Cave Spikes" type="Node2D"]
-script = ExtResource("1_qt3fr")
+script = ExtResource("1_oy0y0")
 
 [node name="CaveSpikeTop1" type="Sprite2D" parent="."]
 position = Vector2(0, -450)
 rotation = 3.14159
 scale = Vector2(0.620109, 0.620108)
-texture = ExtResource("2_l6rgq")
+texture = ExtResource("2_y168i")
 
 [node name="CaveSpikeTop2" type="Sprite2D" parent="."]
 position = Vector2(0, 450)
 scale = Vector2(0.620109, 0.620108)
-texture = ExtResource("2_l6rgq")
+texture = ExtResource("2_y168i")
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -25,4 +28,11 @@ polygon = PackedVector2Array(-1, 145, -41, 302, -44, 491, -44, 491, -53, 670, -1
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
 polygon = PackedVector2Array(-1, -156, -28, -195, -31, -330, -53, -696, 3, -715, 63, -686, 50, -597, 48, -592, 40, -423, 34, -306, 19, -187)
 
+[node name="Score" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score"]
+position = Vector2(2, -9.5)
+shape = SubResource("RectangleShape2D_lhbgi")
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Score" to="." method="_on_score_body_entered"]
