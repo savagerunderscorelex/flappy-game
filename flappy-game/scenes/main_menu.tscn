@@ -1,13 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3qpmw43uun0v"]
+[gd_scene load_steps=8 format=3 uid="uid://d3qpmw43uun0v"]
 
 [ext_resource type="Script" uid="uid://dydikepq1bhpx" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://be1vyhc1hsbji" path="res://images/Screenshot (117).png" id="2_bqqt6"]
+[ext_resource type="FontFile" uid="uid://cki1to3nqmht1" path="res://assets/MedievalMystery.ttf" id="2_ekxnf"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3cyw"]
-bg_color = Color(0.704146, 0.0715926, 0.21908, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wu84c"]
+texture = ExtResource("2_bqqt6")
+modulate_color = Color(0.20871, 0.20871, 0.20871, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.169245, 0.169245, 0.169245, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3cyw"]
+bg_color = Color(0.52435, 0.523756, 0.536358, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -18,6 +34,21 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_l6cm7")
 
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -571.0
+offset_top = -324.0
+offset_right = 571.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_wu84c")
+
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -26,13 +57,34 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -180.0
-offset_top = -54.5
+offset_top = 73.5
 offset_right = 180.0
-offset_bottom = 54.5
+offset_bottom = 182.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
 theme_override_styles/normal = SubResource("StyleBoxFlat_p3cyw")
 text = "Start!"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -321.0
+offset_top = -258.0
+offset_right = 322.0
+offset_bottom = -109.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+text = "Dragon Dashin"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_start_pressed"]

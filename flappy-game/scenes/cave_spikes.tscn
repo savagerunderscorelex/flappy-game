@@ -4,34 +4,36 @@
 [ext_resource type="Texture2D" uid="uid://bq2abbd3nytr8" path="res://assets/jaggedrockpointy.png" id="2_y168i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhbgi"]
-size = Vector2(72, 303)
+size = Vector2(72, 233)
 
 [node name="Cave Spikes" type="Node2D"]
 script = ExtResource("1_oy0y0")
 
 [node name="CaveSpikeTop1" type="Sprite2D" parent="."]
-position = Vector2(0, -450)
+position = Vector2(0, -425)
 rotation = 3.14159
 scale = Vector2(0.620109, 0.620108)
 texture = ExtResource("2_y168i")
 
-[node name="CaveSpikeTop2" type="Sprite2D" parent="."]
-position = Vector2(0, 450)
+[node name="CaveSpikeBottom" type="Sprite2D" parent="."]
+position = Vector2(0, 425)
 scale = Vector2(0.620109, 0.620108)
 texture = ExtResource("2_y168i")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PackedVector2Array(-1, 145, -41, 302, -44, 491, -44, 491, -53, 670, -10, 706, 65, 680, 65, 680, 36, 297)
+position = Vector2(2, -33)
+polygon = PackedVector2Array(-1, 149, -41, 302, -44, 491, -44, 491, -53, 670, -10, 706, 65, 680, 65, 680, 45, 269)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(0, 30)
 polygon = PackedVector2Array(-1, -156, -28, -195, -31, -330, -53, -696, 3, -715, 63, -686, 50, -597, 48, -592, 40, -423, 34, -306, 19, -187)
 
 [node name="Score" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Score"]
-position = Vector2(2, -9.5)
+position = Vector2(1, -5.5)
 shape = SubResource("RectangleShape2D_lhbgi")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

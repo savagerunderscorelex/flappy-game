@@ -4,14 +4,13 @@ var speed : float = 250
 var speedTwo : float = 325
 func _physics_process(delta: float) -> void:
 	position.x -= speed * delta
-	if Autoload.score >= 1:
-		position.x -= speedTwo * delta
 	
 
 
 
 func _on_area_2d_body_entered(_body: Node2D) -> void:
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://scenes/death_screen.tscn")
+	Autoload.deathsBySpikes += 1
 
 
 func _on_score_body_entered(body: Node2D) -> void:
