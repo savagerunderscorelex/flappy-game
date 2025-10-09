@@ -6,6 +6,8 @@ Dragon Dashin' is a Flappy Bird-style game where you play as a dragon flying thr
 
 This game has a main menu, game screen, and a death screen. The death screen features your last score, and the amount of deaths by spikes or by the boundaries during the play session (so it's not saved across devices).
 
+For Athena Award: [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 ## How to Play
 
 If you've played Flappy Bird or any game similar to it, you already have the knowledge to play. In Dragon Dashin', you can use either your spacebar or your left mouse button to make the dragon character jump up to avoid the obstacles.
@@ -30,5 +32,6 @@ I'm putting these here in case someone would like to look at the assets and tuto
 * Bones Font: [Bones - Dafont](https://www.dafont.com/bones.font)
 * Medieval Font: [Medieval Mystery](https://www.dafont.com/medieval-mystery.font)
 * Spikes: [Dungeons & Dragons Crystals](https://najimcg.artstation.com/projects/nYKwmK)
+* Game Background (Unedited): [Seamless Cave Background](https://opengameart.org/content/seamless-cave-background) (I edited this to make it more gray since the original version didn't match the color of the rock spikes)
 
 
