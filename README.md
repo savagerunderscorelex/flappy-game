@@ -26,5 +26,3 @@ I'm putting these here in case someone would like to look at the assets and tuto
 * Spikes: [Dungeons & Dragons Crystals](https://najimcg.artstation.com/projects/nYKwmK)
 
 
-Slack Message:
-Hello, my name's Esther, and I've created a game called Dragon Dashin'! It's a game like Flappy Bird. I created this game through Godot, so this is my first time doing game development (this is for the Level Up challenge!). 

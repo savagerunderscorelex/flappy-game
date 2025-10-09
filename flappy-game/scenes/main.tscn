@@ -17,6 +17,7 @@ script = ExtResource("1_0vcwn")
 offset_right = 1152.0
 offset_bottom = 647.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_sugp2")
+metadata/_edit_use_anchors_ = true
 
 [node name="Dragon" parent="." instance=ExtResource("1_wtj3h")]
 position = Vector2(147, 309)
@@ -36,22 +37,23 @@ polygon = PackedVector2Array(28, -2, 1151, -2, 1153, 650, 1153, 650, 1, 650, 1, 
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 178.0
-offset_top = 129.0
-offset_right = 178.0
-offset_bottom = 129.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_left = 21.0
-offset_top = 2.0
-offset_right = 61.0
-offset_bottom = 85.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -552.0
+offset_top = -312.0
+offset_right = -518.0
+offset_bottom = -229.0
+grow_horizontal = 2
 text = "0"
 label_settings = SubResource("LabelSettings_0vcwn")
 

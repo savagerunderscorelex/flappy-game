@@ -9,12 +9,12 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	var spikesInstance = spikes.instantiate()
-	spikesInstance.position.x = 1152
+	spikesInstance.position.x = 1156
 	spikesInstance.position.y = randi_range(100, 500)
 	add_child(spikesInstance)
 	$Timer.start()
 
-
+   
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("res://scenes/death_screen.tscn")
 	Autoload.deathsByBoundaries += 1

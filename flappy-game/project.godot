@@ -13,7 +13,7 @@ config_version=5
 config/name="flappy-game"
 run/main_scene="uid://d3qpmw43uun0v"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://dmtdcjvn412o2"
 
 [autoload]
 
@@ -22,6 +22,10 @@ Autoload="*res://scenes/Autoload.tscn"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[gui]
+
+common/icon=""
 
 [input]
 
