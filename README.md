@@ -2,12 +2,13 @@
 
 ## About
 
-Dragon Dashin' is a Flappy Bird-style game where you play as a dragon flying through its cave while attempting to avoid the pointy rocks in its path. 
+Dragon Dashin' is a Flappy Bird-style game where you play as a dragon flying through its cave while attempting to avoid the pointy rocks in its path.
+
+This game has a main menu, game screen, and a death screen. The death screen features your last score, and the amount of deaths by spikes or by the boundaries during the play session (so it's not saved across devices).
 
 ## How to Play
 
-If you've played Flappy Bird or any game similar to it, you already have the knowledge to play. In Dragon Dashin', you can use either your spacebar or your left mouse button to make the dragon character jump up to avoid the obstacles. 
-
+If you've played Flappy Bird or any game similar to it, you already have the knowledge to play. In Dragon Dashin', you can use either your spacebar or your left mouse button to make the dragon character jump up to avoid the obstacles.
 
 ## Tutorials and Asset Links
 
@@ -23,3 +24,7 @@ I'm putting these here in case someone would like to look at the assets and tuto
 * Bones Font: [Bones - Dafont](https://www.dafont.com/bones.font)
 * Medieval Font: [Medieval Mystery](https://www.dafont.com/medieval-mystery.font)
 * Spikes: [Dungeons & Dragons Crystals](https://najimcg.artstation.com/projects/nYKwmK)
+
+
+Slack Message:
+Hello, my name's Esther, and I've created a game called Dragon Dashin'! It's a game like Flappy Bird. I created this game through Godot, so this is my first time doing game development (this is for the Level Up challenge!). 
