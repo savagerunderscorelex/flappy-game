@@ -6,3 +6,4 @@ func _on_to_start_pressed() -> void:
 func _enter_tree() -> void:
 	$Deathsbyboundaries.text = "deaths by boundaries: " + str(Autoload.deathsByBoundaries)
 	$Deathsbyspikes.text = "deaths by spikes: " + str(Autoload.deathsBySpikes)
+	$Score.text = "score: " + str(Autoload.score)
