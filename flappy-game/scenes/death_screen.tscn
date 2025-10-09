@@ -70,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 80
-text = "you died!"
+text = "you died"
 
 [node name="Deathsbyspikeslabel" type="Label" parent="."]
 layout_mode = 1
@@ -87,7 +87,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 40
-text = "deaths by spikes:"
+text = "deaths by spikes"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -106,7 +106,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 40
-text = "deaths by boundaries:"
+text = "deaths by boundaries"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -125,16 +125,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 40
-text = "score:"
+text = "score"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Deathsbyboundariesvar" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 764.0
-offset_top = 205.0
-offset_right = 839.0
-offset_bottom = 266.0
+offset_left = 826.0
+offset_top = 259.0
+offset_right = 901.0
+offset_bottom = 320.0
 theme_override_fonts/normal_font = ExtResource("3_mqh5l")
 theme_override_font_sizes/normal_font_size = 40
 horizontal_alignment = 1
@@ -142,10 +142,10 @@ vertical_alignment = 1
 
 [node name="Deathsbyspikesvar" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 746.0
-offset_top = 197.0
-offset_right = 850.0
-offset_bottom = 273.0
+offset_left = 762.0
+offset_top = 193.0
+offset_right = 866.0
+offset_bottom = 269.0
 theme_override_fonts/normal_font = ExtResource("3_mqh5l")
 theme_override_font_sizes/normal_font_size = 40
 horizontal_alignment = 1
@@ -159,7 +159,6 @@ offset_right = 727.0
 offset_bottom = 404.0
 theme_override_fonts/normal_font = ExtResource("3_mqh5l")
 theme_override_font_sizes/normal_font_size = 40
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_to_start_pressed"]
