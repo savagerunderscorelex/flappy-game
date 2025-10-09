@@ -10,6 +10,12 @@ This game has a main menu, game screen, and a death screen. The death screen fea
 
 If you've played Flappy Bird or any game similar to it, you already have the knowledge to play. In Dragon Dashin', you can use either your spacebar or your left mouse button to make the dragon character jump up to avoid the obstacles.
 
+## Journey
+
+Doing this project was easy, at first. I followed a tutorial for the basic aspects of the game, like having the obstacles, jumping, and the score. I also built on that tutorial by adding more things: making the border of the screen dangerous to the character (like regular Flappy Bird), adding a home and death screen, adding stats to the death screen including the amount of deaths and the game's score, and through having an animated sprite. 
+
+However, I struggled with exporting the project to itch.io. In the game engine, everything worked out fine, but on itch.io there were issues. Eventually I discovered that the issues were due to the fonts I used not having special characters, but it took a lot of trial and error (deleting the exports and redownloading them) to figure this out. 
+
 ## Tutorials and Asset Links
 
 I'm putting these here in case someone would like to look at the assets and tutorials I used, and also in case I would want to do a similar project in the future:
