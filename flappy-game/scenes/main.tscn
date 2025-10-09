@@ -17,7 +17,6 @@ script = ExtResource("1_0vcwn")
 offset_right = 1152.0
 offset_bottom = 647.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_sugp2")
-metadata/_edit_use_anchors_ = true
 
 [node name="Dragon" parent="." instance=ExtResource("1_wtj3h")]
 position = Vector2(147, 309)

@@ -19,6 +19,11 @@ config/icon="uid://dmtdcjvn412o2"
 
 Autoload="*res://scenes/Autoload.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
