@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmc3widmujs72"]
+[gd_scene load_steps=7 format=3 uid="uid://dmc3widmujs72"]
 
 [ext_resource type="Script" uid="uid://kcpp8ma6weuf" path="res://scripts/death_screen.gd" id="1_dwo6e"]
 [ext_resource type="FontFile" uid="uid://ykr0txtqtppj" path="res://assets/BONEAPA.TTF" id="2_mqh5l"]
+[ext_resource type="FontFile" uid="uid://uyct0yw37wh6" path="res://assets/Sweet Toffee.ttf" id="3_mqh5l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ns25"]
 bg_color = Color(0, 0, 0, 1)
@@ -34,6 +35,7 @@ layout_mode = 1
 offset_right = 1152.0
 offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_7ns25")
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -70,7 +72,7 @@ theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 80
 text = "you died!"
 
-[node name="Deathsbyspikes" type="Label" parent="."]
+[node name="Deathsbyspikeslabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -85,11 +87,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 40
-text = "placeholder"
+text = "deaths by spikes:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Deathsbyboundaries" type="Label" parent="."]
+[node name="Deathsbyboundarieslabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -104,11 +106,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 40
-text = "placeholder"
+text = "deaths by boundaries:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Score" type="Label" parent="."]
+[node name="Scorelabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -123,7 +125,40 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 40
-text = "placeholder"
+text = "score:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Deathsbyboundariesvar" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 764.0
+offset_top = 205.0
+offset_right = 839.0
+offset_bottom = 266.0
+theme_override_fonts/normal_font = ExtResource("3_mqh5l")
+theme_override_font_sizes/normal_font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Deathsbyspikesvar" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 197.0
+offset_right = 850.0
+offset_bottom = 273.0
+theme_override_fonts/normal_font = ExtResource("3_mqh5l")
+theme_override_font_sizes/normal_font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Scorevar" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 638.0
+offset_top = 320.0
+offset_right = 727.0
+offset_bottom = 404.0
+theme_override_fonts/normal_font = ExtResource("3_mqh5l")
+theme_override_font_sizes/normal_font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
 
