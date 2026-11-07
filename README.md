@@ -8,6 +8,7 @@ This game has a main menu, game screen, and a death screen. The death screen fea
 
 For Athena Award: [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
+![Hi](demo-image.png)
 ## How to Play
 
 If you've played Flappy Bird or any game similar to it, you already have the knowledge to play. In Dragon Dashin', you can use either your spacebar or your left mouse button to make the dragon character jump up to avoid the obstacles.
