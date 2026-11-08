@@ -13,6 +13,10 @@ For Athena Award: [![Athena Award Badge](https://img.shields.io/endpoint?url=htt
 
 If you've played Flappy Bird or any game similar to it, you already have the knowledge to play. In Dragon Dashin', you can use either your spacebar or your left mouse button to make the dragon character jump up to avoid the obstacles.
 
+## Where to Play
+
+You want to play this game? Well, you can, on [itch.io](https://alexistreamoon.itch.io/dragon-dashin)!
+
 ## Journey
 
 Doing this project was easy, at first. I followed a tutorial for the basic aspects of the game, like having the obstacles, jumping, and the score. I also built on that tutorial by adding more things: making the border of the screen dangerous to the character (like regular Flappy Bird), adding a home and death screen, adding stats to the death screen including the amount of deaths and the game's score, and through having an animated sprite. 
@@ -34,5 +38,3 @@ I'm putting these here in case someone would like to look at the assets and tuto
 * Medieval Font: [Medieval Mystery](https://www.dafont.com/medieval-mystery.font)
 * Spikes: [Dungeons & Dragons Crystals](https://najimcg.artstation.com/projects/nYKwmK)
 * Game Background (Unedited): [Seamless Cave Background](https://opengameart.org/content/seamless-cave-background) (I edited this to make it more gray since the original version didn't match the color of the rock spikes)
-
-
